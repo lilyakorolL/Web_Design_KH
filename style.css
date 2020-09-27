@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif; // что делает font-family?
+    ////1.Определяет, какой шрифт
+    будет использоваться браузером для отображения текста на веб-странице.
+    font-size: 14px;
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color:#40DABA;
+}
+
+
+/* Container
+===================*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* Header
+===================*/
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: absolute; // что будет, если поменять значение на fixed?
+    ////2.По своему действию это значение близко к absolute,
+    но в отличие от него привязывается к указанной свойствами left,
+    top, right и bottom точке на экране и не меняет своего положения
+    при прокрутке веб-страницы. Браузер Firefox вообще не отображает полосы прокрутки,
+    если положение элемента задано фиксированным, и оно не помещается целиком в окно браузера. В браузере Opera хотя и показываются полосы прокрутки, но они никак не влияют на позицию элемента.
+
+    top: 0;
+    left: 0;
+    z-index: 1000; // какие функции выполняет?
+    //3.определяет элементы  сайта по оси z.
+}
+
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+
+    border-bottom: 1px solid #515369; // за что отвечает данная строка?
+    //4.Данная строка отвечает за цвет и пиксели.
+    Свойство позволяет одновременно установить толщину, стиль и цвет границы внизу элемента.
+
+}
+
+
+/* Nav
+===================*/
+
+.nav {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    opacity: .75;  // что делаает данный параметр?
+    //5.opacity позволяет сделать любой элемент веб-страницы частично или полностью прозрачным.
+    Данное свойство изменяет прозрачность элементов, для которых установлено фоновое изображение (картинка) или задан фон с помощью цвета или градиента.
+    transition: opacity .1s linear; // что будет, если заменить значение на .10s?
+    //6.#transition - устанавливает эффект перехода между двумя состояниями элемента.
+}
+
+.f1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+  color: #27263D;
+}
+
+.f2 {
+  padding-left: 25%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+  color: #27263D;
+}
+
+.f3 {
+  padding-left: 30%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+  color: #27263D;
+
+
+}
+
+/* Intro
+===================*/
+.intro {
+    height: 750px;
+    padding-top: 20%;
+    background: #31344e url("img/_intro-bg.jpg") center no-repeat;
+    background-size: cover; // что означает параметр cover?
+    //7.cover — фоновое изображение масштабируется так, чтобы полностью заполнить пространство элемента,
+    при этом сохраняя свои пропорции. Если пропорции элемента не соответствуют пропорциям изображения, это может привести к тому, что часть рисунка будет скрыта.
+
+}
+
+.container2 {
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+    background: red;
+}
+
+#column-1,
+#column-2,
+#column-3 {
+    float: left;
+    min-height: 100%;
+}
+
+
+#column-1 {
+    width: 50px;
+    background: red;
+}
+
+
+#column-2 {
+    width: 90px;
+    background: green;
+}
+
+#column-3 {
+    width: 50px;
+    background: blue;
+}
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.intro_title {
+    margin: 10px 35px 25px 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    line-height: 1.1;
+    color: #8B7AA8;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.intro__subtitle {
+    margin-bottom: 60px;
+    font-size: 22px;
+    color: #7AA899;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+
+/* Button
+===================*/
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none; // какие функции выполняет  text-decoration?
+    //8. Добавляет оформление текста в виде его подчёркивания, перечёркивания или линии над текстом.
+    Одновременно можно применить более одного стиля, перечисляя значения через пробел.
+    transition: background .1s linear;
+}
+
+.btn--red {
+    background-color: #27263D;
+}
+
+.btn--red:hover { //зачем используется :hover
+  //:hover определяет стиль элемента при наведении на него курсора мыши (когда кнопка ещё не нажата)
+    background-color: #27263D;
+}

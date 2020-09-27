@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+
+    font-size: 14px;
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color:#40DABA;
+}
+
+
+/* Container
+===================*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* Header
+===================*/
+
+.header {
+    margin-top:10px;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+
+}
+
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+
+    border-bottom: 1px solid #515369;
+
+
+}
+
+
+/* Nav
+===================*/
+
+.nav {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav__link {
+    margin-left: 50px;
+    color: #000000;
+    text-decoration: none;
+    opacity: .75;
+
+
+    transition: opacity .1s linear;
+
+}
+
+/* Intro
+===================*/
+.intro {
+    height: 750px;
+    padding-top: 20%;
+    background: url("img/img-decor-01.jpg") center no-repeat;
+    background-size: cover;
+
+
+
+
+}
+
+.container2 {
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+    background: red;
+}
+
+#column-1,
+#column-2,
+#column-3 {
+    float: left;
+    min-height: 100%;
+}
+
+
+#column-1 {
+    width: 50px;
+    background: red;
+}
+
+
+#column-2 {
+    width: 90px;
+    background: green;
+}
+
+#column-3 {
+    width: 50px;
+    background: blue;
+}
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.intro_title {
+    margin: 10px 35px 25px 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
+    line-height: 1;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -5px;
+}
+
+
+
+.intro__subtitle {
+
+    font-size: 22px;
+    color: #cba8ff;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.intro__subtitle2 {
+    margin-bottom: 60px;
+    font-size: 22px;
+    color: #C0C0C0;
+    line-height: 10;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+
+
+
+/* Button
+===================*/
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear;
+}
+
+.btn--red {
+    background-color: #27263D;
+}
+
+.btn--red:hover {
+
+    background-color: #27263D;
+}
